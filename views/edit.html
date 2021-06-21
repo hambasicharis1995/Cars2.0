@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Shop</title>
+    <link rel="stylesheet" type="text/css" href="/css/shop.css" />
+    <link rel="stylesheet" type="text/css" href="/css/navigation.css" />
+</head>
+<body>
+    <header>
+        <nav class="navigation">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/haris/add-product">Add Vehicle</a></li>
+                <li><a href="/haris/shop">Inventory</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1 class="main-heading">Edit Page</h1>
+        <p class="sub-heading">Edit your product here.</p>
+        <form action="/haris/complete-edit" method="POST">
+            <input class="productName" name="productName" />
+            <br />
+            <br />
+            <input class="id" name="id" />
+            <br />
+            <br />
+            <input type="submit" value="Complete Edit" />
+        </form>
+    </main>
+    <script type="text/javascript" src="/js/edit.js"></script>
+</body>
+</html>

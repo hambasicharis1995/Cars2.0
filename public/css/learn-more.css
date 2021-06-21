@@ -1,0 +1,64 @@
+body {
+    padding-bottom: 9rem;
+}
+
+.main-heading {
+    font-size: 5rem;
+    margin: 6rem auto 0 auto;
+    width: max-content;
+    /* color: #d3322a; */
+    color: #323944;
+    /* color: #f9ce5c; */
+}
+
+.sub-heading-container {
+    width: max-content;
+    margin: .5rem auto 0 auto;
+    display: flex;
+    justify-content: space-between;
+    color: #323944;
+}
+
+.sub-heading-country,
+.sub-heading-year-founded {
+    font-size: 1.3rem;
+}
+
+.sub-heading-country {
+    /* margin-right: 2rem; */
+}
+
+
+.sub-heading-year-founded {
+    /* margin-left: 2rem; */
+}
+
+.divider {
+    width: 1px;
+    /* background-color: #d3322a; */
+    background-color: #323944;
+}
+
+.main-heading-description-divider {
+    width: 5%;
+    height: 4px;
+    background-color: #323944;
+    margin: 3rem auto 0 auto;
+    border-radius: 25px;
+}
+
+.description-container {
+    width: 60%;
+    margin: 3rem auto 9rem auto;
+}
+
+.description {
+    line-height: 1.9;
+    font-size: 1.75rem;
+    color: #323944;
+}
+
+.video {
+    display: flex;
+    justify-content: center;
+}

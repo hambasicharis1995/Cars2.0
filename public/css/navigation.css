@@ -1,0 +1,53 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;600&family=Montserrat&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+html {
+    /* font-family: 'Nunito', sans-serif; */
+    font-family: 'Barlow', sans-serif;
+    font-size: 16px;
+}
+
+.navigation {
+    max-width: 25%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    /* margin-bottom: 3rem; */
+    padding: 1.5rem 3rem .875rem;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    /* border-bottom-color: #1a73e8; */
+    border-bottom-color: #323944;
+}
+
+.navigation ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.navigation li {
+    list-style-type: none;
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.navigation li a:link,
+.navigation li a:visited,
+.navigation li a:active {
+    text-decoration: none;
+    /* color: #1a73e8; */
+    color: #323944;
+}
+
+.navigation li a:hover {
+    /* color: #099990; */
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Add Vehicle</title>
+    <link rel="stylesheet" type="text/css" href="/css/navigation.css" />
+    <link rel="stylesheet" type="text/css" href="/css/add-product.css" />
+</head>
+<body>
+    <header>
+        <nav class="navigation">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/haris/add-product">Add Vehicle</a></li>
+                <li><a href="/haris/shop">Inventory</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1 class="main-heading">Join Our Family.</h1>
+        <form action="/haris/product-submit" class="form" method="POST" enctype="multipart/form-data">
+            <!-- NEED THIS INPUT TAG TO MAKE CSURF WORK -->
+            <!-- <input type="hidden" class="csrfToken" name="_csrf" value="" /> -->
+            <input class="input" type='text' name='name' placeholder='Name'/>
+            <br />
+            <input class="input" type="text" name='countryOfOrigin' placeholder='Country of Origin' />
+            <br />
+            <div class="field-set">
+                <input class="input" type="text" name="yearFounded" placeholder="Year Founded" />
+                <input class="input priceOfVehicle" type="text" name="price" placeholder="Price of Vehicle" rows="10" />
+            </div>
+            <br />
+            <span class="descriptionTextareaSpan"><textarea class="input descriptionTextarea" type="text" name="description" placeholder="Description of Company"></textarea></span>
+            <br />
+            <span class="vehicleImage input"><input type="file" name="vehicleImageFINAL" /></span>
+            <br />
+            <textarea class="input embeddedVideoTextarea" type="text" name="video" placeholder="HTML Code for Embedded Video"></textarea>
+            <br />
+            <div class="btn-container">
+                <button class="input" type="submit">Submit</button>
+            </div>
+        </form>
+    </main>
+    <script type="text/javascript" src="/js/add-product.js"></script>
+</body>
+</html>

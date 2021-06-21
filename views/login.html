@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./css/login.css" />
+    <link rel="stylesheet" type="text/css" href="/css/navigation.css" />
+</head>
+<body>
+    <header>
+        <nav class="navigation">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/haris/add-product">Add Vehicle</a></li>
+                <li><a href="/haris/shop">Inventory</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="login-container">
+        <form method="POST" action="/login/enter" class="login-container-form">
+            <input type="hidden" name="_csrf" value="" class="csrf" />
+            <input type="text" placeholder="Username" name="username" />
+            <br />
+            <input type="password" placeholder="Password" name="password" />
+            <br />
+            <!-- <input type="password" placeholder="Confirm Password" name="confirmPassword" /> -->
+            <input type="email" placeholder="Email" name="email" />
+            <br />
+            <input type="submit" name="submit" value="Log in" />
+        </form>
+    </div>
+    <script src="/js/login.js"></script>
+</body>
+</html>
