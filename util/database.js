@@ -5,7 +5,7 @@ const MongoClient = mongodb.MongoClient;
 let _db;
 
 const mongoConnect = () => {
-        MongoClient.connect("mongodb+srv://HarisHambasic:h1h2h3h4h5@cluster0.jth3e.mongodb.net/Products?retryWrites=true&w=majority")
+        MongoClient.connect("mongodb+srv://<USERNAME>:<PASSWORD>@cluster0.jth3e.mongodb.net/Products?retryWrites=true&w=majority")
             .then(client => {
                 console.log("Connected!");
                 _db = client.db("Products"); // here you specify the exact database, which in this case is "Products"
